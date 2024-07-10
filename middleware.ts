@@ -43,19 +43,19 @@ export function middleware(request: NextRequest) {
       return NextResponse.next();
     }
 
-    if (isUserLoginPath) {
-      if (roleName === "Employee" && token) {
-        return NextResponse.redirect(new URL("/", request.url));
-      }
-      return NextResponse.next();
-    }
+    // if (isUserLoginPath) {
+    //   if (roleName === "Employee" && token) {
+    //     return NextResponse.redirect(new URL("/", request.url));
+    //   }
+    //   return NextResponse.next();
+    // }
 
-    if (isUserPath) {
-      if (!token) {
-        return NextResponse.redirect(new URL("/login", request.url));
-      }
-      return NextResponse.next();
-    }
+    // if (isUserPath) {
+    //   if (!token) {
+    //     return NextResponse.redirect(new URL("/login", request.url));
+    //   }
+    //   return NextResponse.next();
+    // }
 
     // Continue with the request if no redirection occurred
     return NextResponse.next();

@@ -11,7 +11,7 @@ import Image from "next/image";
 
 type Props = {};
 
-const page = (props: Props) => {
+const ProfilePage = (props: Props) => {
   const [switchProfile, setSwitchProfile] = useState<number>(0);
   const [items, setItems] = useState<CartItems[]>([
     {
@@ -162,4 +162,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default ProfilePage;

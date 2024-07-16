@@ -29,10 +29,19 @@ export type FilterT = {
 
 // TODO: Make change this to according the data
 export type ProductT = {
-  id: number;
-  name: string;
+  _id: number;
+  productCode: string;
   image: string | StaticImport;
-  quantity: number;
+  colour:string;
+  Quantity: string;
+  goldPurity: number;
+  goldWeight: number;
+  goldPrice: number;
+  makingCharges: number;
+  productImages:[string]
+  gst: number;
+  grandTotal: number;
+  quantity: string;
   basePrice: string;
   price: string;
   links: string[];

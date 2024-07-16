@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 import { Nunito_Sans } from "next/font/google";
+import Head from "next/head";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
@@ -13,8 +14,14 @@ const nunitoSans = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Medicart",
+  title: "Chamunda Jewellers Diu",
+  description:
+    "We make all kinds of DESIGNER gold & silver jewellery 100% BIS hallmarked jewellery government approved ( just order )in business since 1991.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
+
 
 export default function RootLayout({
   children,
@@ -23,6 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className={nunitoSans.className}>
       <ToastContainer position='top-right' theme='colored' autoClose={2000} />
       {children}</body>

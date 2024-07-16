@@ -66,7 +66,9 @@ const config: Config = {
         },
         textPrimary: {
           100: "#1B1E1C",
-          200:"#333333"
+          200:"#333333",
+          300:"#d8b04a",
+          400:"#f1d58f"
         },
         black: {
           50: "#F9FAFB",

@@ -1,0 +1,107 @@
+[
+  {
+    "_id": 1,
+    "productCode": "BG00001",
+    "colour": "red+green+yellow",
+    "productImages": [
+      "BG00001PR01",
+      "BG00001PR02",
+      "BG00001PR03",
+      "BG00001PR04"
+    ],
+    "quantity": "1 pair (2 pcs)",
+    "goldPurity": "22k",
+    "goldWeight": 3.1,
+    "goldPrice": 21700,
+    "makingCharges": 2945,
+    "gst": 739,
+    "grandTotal": 25384
+  },
+  {
+    "_id": 2,
+    "productCode": "BG00002",
+    "colour": "red+green+cream",
+    "productImages": [
+      "BG00002PR01",
+      "BG00002PR02",
+      "BG00002PR03",
+      "BG00002PR04"
+    ],
+    "quantity": "1 pair (2 pcs)",
+    "goldPurity": "22k",
+    "goldWeight": 3.5,
+    "goldPrice": 24500,
+    "makingCharges": 3325,
+    "gst": 834,
+    "grandTotal": 28659
+  },
+  {
+    "_id": 3,
+    "productCode": "BG00003",
+    "colour": "green transparent",
+    "productImages": [
+        "BG00003PR01",
+        "BG00003PR02",
+        "BG00003PR03"
+      ],
+    "quantity": "1 pcs",
+    "goldPurity": "22k",
+    "goldWeight": 3.0,
+    "goldPrice": 21000,
+    "makingCharges": 3200,
+    "gst": 726,
+    "grandTotal": 24926
+  },
+  {
+    "_id": 4,
+    "productCode": "BG00004",
+    "colour": "tiger",
+    "productImages": [
+        "BG00004PR01",
+        "BG00004PR02",
+        "BG00004PR03"
+      ],
+    "quantity": "1 pcs",
+    "goldPurity": "22k",
+    "goldWeight": 3.0,
+    "goldPrice": 21000,
+    "makingCharges": 3200,
+    "gst": 726,
+    "grandTotal": 24926
+  },
+  {
+    "_id": 5,
+    "productCode": "BG00005",
+    "colour": "tiger",
+    "productImages": [
+        "BG00005PR01",
+        "BG00005PR02",
+        "BG00005PR03",
+        "BG00005PR04"
+      ],
+    "quantity": "1 pcs",
+    "goldPurity": "22k",
+    "goldWeight": 2.0,
+    "goldPrice": 14000,
+    "makingCharges": 2500,
+    "gst": 496,
+    "grandTotal": 16996
+  },
+  {
+    "_id": 6,
+    "productCode": "BG00006",
+    "colour": "marun transparent",
+    "productImages": [
+        "BG00006PR01",
+        "BG00006PR02",
+        "BG00006PR03"
+      ],
+    "quantity": "1 pcs",
+    "goldPurity": "22k",
+    "goldWeight": 1.7,
+    "goldPrice": 11900,
+    "makingCharges": 2199,
+    "gst": 422,
+    "grandTotal": 14521
+  }
+]

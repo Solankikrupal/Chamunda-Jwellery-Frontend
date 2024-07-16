@@ -10,7 +10,7 @@ interface ImageMagnifierProps {
   zoomLevel?: number;
 }
 
-const ImageMagnifier: React.FC<ImageMagnifierProps> = ({
+const   ImageMagnifier: React.FC<ImageMagnifierProps> = ({
   src,
   width = 300,
   height = 300,
@@ -43,7 +43,6 @@ const ImageMagnifier: React.FC<ImageMagnifierProps> = ({
   return (
     <div
       className="relative"
-      style={{ width, height }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onMouseMove={handleMouseMove}

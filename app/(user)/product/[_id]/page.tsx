@@ -41,15 +41,13 @@ const ProductPage = ({ params }: { params: { _id: string } }) => {
       <div className="md:p-4 bg-card text-card-foreground mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="md:col-span-1 md:p-2 py-2">
-            <div className="relative rounded-lg">
+            <div className="relative w-full overflow-hidden rounded-lg">
               <Suspense fallback={<LoadingSpinner />}>
                 {loading ? ( // Show skeleton loading if loading
                   <div className="animate-pulse bg-gray-200 rounded-lg h-96 w-full"></div>
                 ) : (
                   <ImageMagnifier
                     src={`/Image/products/${mainImage}.jpeg`}
-                    width={350}
-                    height={450}
                   />
                 )}
               </Suspense>
@@ -123,13 +121,13 @@ const ProductPage = ({ params }: { params: { _id: string } }) => {
                 </div>
                 <Link
                   href={`https://wa.me/${9714314397}`}
-                  className="mt-4 w-full md:w-1/3 bg-green-700 text-white flex items-center  justify-center gap-3 py-2 rounded-xs"
+                  className="mt-4 w-full md:w-1/2 xl:w-1/3 bg-green-700 text-white flex items-center  justify-center gap-3 py-2 rounded-xs"
                 >
                   <FaWhatsapp size={20} className="text-white" /> Enquiry on
                   Whatsapp
                 </Link>
-                <div className="flex justify-between items-center flex-col md:flex-row sm:gap-5 md:gap-1 md:p-4 border-b border-border-200 text-xs md:text-sm mt-12">
-                  <div className="flex md:items-center gap-10 md:gap-5  md:space-x-2 text-xs md:text-sm">
+                <div className="flex justify-between items-center flex-col xl:flex-row sm:gap-5 xl:gap-10 xl:p-4 border-b border-border-200 text-xs md:text-sm mt-12">
+                  <div className="flex md:items-center justify-between w-full gap-10 md:gap-5  md:space-x-2 text-xs md:text-sm">
                     <span className="text-muted-foreground ">
                       Any Questions ? <br className="hidden md:block" /> Please
                       contact us at
@@ -150,7 +148,7 @@ const ProductPage = ({ params }: { params: { _id: string } }) => {
                       </span>
                     </div> */}
                   </div>
-                  <div className="flex items-center space-x-4 text-xs my-5 md:my-0">
+                  <div className="flex items-center justify-between w-full space-x-4 text-xs my-5 md:my-0">
                     <div className="text-center">
                       <span className="text-primary font-semibold">
                         100% Certified by
@@ -182,7 +180,7 @@ const ProductPage = ({ params }: { params: { _id: string } }) => {
             <h2 className="text-center text-xl font-semibold mb-4">
               Product Details
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div>
                 <h3 className="font-bold mb-2">Basic Information</h3>
                 <ul>

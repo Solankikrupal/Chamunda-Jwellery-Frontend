@@ -2,6 +2,7 @@
 
 import { ProductT } from "@/app/common/constants/type";
 import LoadingSpinner from "@/app/components/LoadingSpinner";
+import ImageMagnifier from "@/app/components/MagnifierImage";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -10,7 +11,6 @@ import { BsCalendar2DateFill } from "react-icons/bs";
 import { FaPhoneAlt, FaStamp, FaWhatsapp } from "react-icons/fa";
 import { HiDocumentMagnifyingGlass } from "react-icons/hi2";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
-import ReactImageMagnify from "react-image-magnify";
 
 type Props = {};
 
@@ -46,28 +46,10 @@ const ProductPage = ({ params }: { params: { _id: string } }) => {
                 {loading ? ( // Show skeleton loading if loading
                   <div className="animate-pulse bg-gray-200 rounded-lg h-96 w-full"></div>
                 ) : (
-                  <ReactImageMagnify
-                    {...{
-                      smallImage: {
-                        alt: "Gold bangle",
-                        isFluidWidth: true,
-                        src: `/Image/products/${mainImage}.jpeg`,
-                      },
-                      largeImage: {
-                        src: `/Image/products/${mainImage}.jpeg`,
-                        width: 1200, // adjust as necessary
-                        height: 1800, // adjust as necessary
-                      },
-                      lensStyle: {
-                        backgroundColor: "rgba(0,0,0,.6)",
-                        transition:"all 0.5s ease-in"
-                      },
-                      isHintEnabled: true,
-                      enlargedImageContainerDimensions: {
-                        width: "100%",
-                        height: "100%",
-                      },
-                    }}
+                  <ImageMagnifier
+                    src={`/Image/products/${mainImage}.jpeg`}
+                    width={350}
+                    height={450}
                   />
                 )}
               </Suspense>
@@ -78,7 +60,9 @@ const ProductPage = ({ params }: { params: { _id: string } }) => {
                   key={index}
                   src={`/Image/products/${item}.jpeg`}
                   alt={`Gold bangle thumbnail ${index + 1}`}
-                  className={`w-12 h-12 rounded-lg cursor-pointer transition-all ${mainImage === item && 'border-2 border-primary-900'}`}
+                  className={`w-12 h-12 rounded-lg cursor-pointer transition-all ${
+                    mainImage === item && "border-2 border-primary-900"
+                  }`}
                   onClick={() => setMainImage(item)}
                 />
               ))}
@@ -137,18 +121,25 @@ const ProductPage = ({ params }: { params: { _id: string } }) => {
                     </tbody>
                   </table>
                 </div>
-                <Link href={`https://wa.me/${9714314397}`} className="mt-4 w-full md:w-1/3 bg-green-700 text-white flex items-center  justify-center gap-3 py-2 rounded-xs">
+                <Link
+                  href={`https://wa.me/${9714314397}`}
+                  className="mt-4 w-full md:w-1/3 bg-green-700 text-white flex items-center  justify-center gap-3 py-2 rounded-xs"
+                >
                   <FaWhatsapp size={20} className="text-white" /> Enquiry on
                   Whatsapp
                 </Link>
                 <div className="flex justify-between items-center flex-col md:flex-row sm:gap-5 md:gap-1 md:p-4 border-b border-border-200 text-xs md:text-sm mt-12">
                   <div className="flex md:items-center gap-10 md:gap-5  md:space-x-2 text-xs md:text-sm">
                     <span className="text-muted-foreground ">
-                      Any Questions ? <br className="hidden md:block" /> Please contact us at
+                      Any Questions ? <br className="hidden md:block" /> Please
+                      contact us at
                     </span>
                     <div className="flex items-center space-x-2 ">
-                    <FaPhoneAlt />
-                      <a href="tel:9714314397" className="text-primary font-semibold">
+                      <FaPhoneAlt />
+                      <a
+                        href="tel:9714314397"
+                        className="text-primary font-semibold"
+                      >
                         +91 9714314397
                       </a>
                     </div>
@@ -170,11 +161,11 @@ const ProductPage = ({ params }: { params: { _id: string } }) => {
                       </span>
                     </div>
                     <Image
-                        src="/svg/BIS-icon.svg"
-                        alt="Hall mark BIS"
-                        width={100}
-                        height={100}
-                      />
+                      src="/svg/BIS-icon.svg"
+                      alt="Hall mark BIS"
+                      width={100}
+                      height={100}
+                    />
                   </div>
                 </div>
               </>

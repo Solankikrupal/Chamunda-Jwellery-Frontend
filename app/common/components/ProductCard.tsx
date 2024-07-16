@@ -14,14 +14,11 @@ import LoadingSpinner from "@/app/components/LoadingSpinner";
 type Props = {
   productDetails?: ProductT;
   index?: number;
-  handleClick: () => void;
-  setProductList: Dispatch<SetStateAction<ProductT[]>>;
   loading: boolean;
 };
 
 const ProductCard: React.FC<Props> = ({
   index,
-  handleClick,
   productDetails,
   loading,
 }) => {

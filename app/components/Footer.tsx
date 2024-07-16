@@ -9,15 +9,15 @@ const Footer = (props: Props) => {
   return (
     <footer className="min-h-[200px] bg-primary-900 flex items-center justify-center text-border-200">
       <div className="container px-5 lg:px-32">
-        <div className="grid grid-cols-1 lg:grid-cols-3 w-full gap-5 border-b border-gray-200 py-5 xl:p-10">
-          <div className="col flex items-start justify-center flex-col sm:order-1 lg:order-first">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 w-full gap-5 border-b border-gray-200 py-5 xl:p-10">
+          <div className="col-span-1 flex items-start justify-center flex-col sm:order-1 lg:order-first">
             <p className=" text-justify">
               We make all kinds of DESIGNER gold & silver jewellery 100% BIS
               hallmarked jewellery government approved ( just order )in business
               since 1991.
             </p>
           </div>
-          <div className="col text-center flex items-center justify-center order-first ">
+          <div className="col-span-1 text-center flex items-center justify-center order-first ">
             <div className="flex items-center space-x-2">
               <Image
                 src="/svg/logoFooterVibrantV3.svg"
@@ -27,7 +27,7 @@ const Footer = (props: Props) => {
               />
             </div>
           </div>
-          <div className="col flex items-start justify-center flex-col gap-5">
+          <div className="col-span-1 flex items-start justify-center flex-col gap-5">
             <div className=" flex items-start gap-5 text-sm">
               <FaLocationDot className="inline" size={25} />
               <address className="not-italic m-0  font-light capitalize text-justify">
@@ -38,8 +38,8 @@ const Footer = (props: Props) => {
             </div>
           </div>
 
-          
-            <div className=" col-span-3 flex items-center justify-between">
+          <div className="w-full md:col-span-3">
+            <div className=" flex flex-col gap-4 md:flex-row md:items-center justify-between">
               <div className="flex items-start gap-5">
                 <FaPhone className="inline mt-1" size={20} />
                 <a
@@ -59,7 +59,7 @@ const Footer = (props: Props) => {
                 </a>
               </div>
             </div>
-          
+            </div>
         </div>
         <div className="text-xs text-center py-5 cursor-none">
           <p>© 2024 Chamunda Jewellers Diu, All rights reserved.</p>

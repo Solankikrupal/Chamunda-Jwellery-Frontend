@@ -32,6 +32,7 @@ export default function RootLayout({
     <html lang="en">
        <Head>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="fM01WlfuhaX63tO9hwRcnhmV8BdFSE08pIy5Fn7mrp4" />
       </Head>
       <body className={nunitoSans.className}>
       <ToastContainer position='top-right' theme='colored' autoClose={2000} />

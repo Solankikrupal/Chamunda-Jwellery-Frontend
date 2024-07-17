@@ -211,20 +211,24 @@ const ProductPage = ({ params }: { params: { _id: string } }) => {
                   </li>
                   <li className="flex justify-between mb-1">
                     <span className="font-medium">Metal Colour</span>
-                    <span className=" capitalize">{data[0]?.colour}</span>
+                    <span className=" capitalize">Yellow</span>
                   </li>
                   <li className="flex justify-between mb-1">
-                    <span className="font-medium">Gross Weight (g)</span>
-                    <span>8.653</span>
+                    <span className="font-medium">Bangle Colour</span>
+                    <span className=" capitalize">{data[0].colour}</span>
                   </li>
                   <li className="flex justify-between mb-1">
+                    <span className="font-medium">Gold Weight (g)</span>
+                    <span>{data[0]?.goldWeight}</span>
+                  </li>
+                  {/* <li className="flex justify-between mb-1">
                     <span className="font-medium">Net Weight (g)</span>
                     <span>1.430</span>
                   </li>
                   <li className="flex justify-between mb-1">
                     <span className="font-medium">Weight Range</span>
                     <span>0.2-0.3 Grams</span>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div>
@@ -236,7 +240,7 @@ const ProductPage = ({ params }: { params: { _id: string } }) => {
                   </li>
                   <li className="flex justify-between mb-1">
                     <span className="font-medium">Hallmark License No</span>
-                    <span>HMC-7790174629</span>
+                    <span>HMC-7190177322</span>
                   </li>
                 </ul>
               </div>

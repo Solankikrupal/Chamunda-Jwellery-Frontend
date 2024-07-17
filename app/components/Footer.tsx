@@ -39,7 +39,7 @@ const Footer = (props: Props) => {
           </div>
 
           <div className="w-full md:col-span-3">
-            <div className=" flex flex-col gap-4 md:flex-row md:items-center justify-between">
+            <div className="flex flex-col gap-4 md:flex-row md:items-center justify-between">
               <div className="flex items-start gap-5">
                 <FaPhone className="inline mt-1" size={20} />
                 <a

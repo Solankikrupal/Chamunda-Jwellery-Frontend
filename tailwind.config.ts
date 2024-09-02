@@ -49,7 +49,7 @@ const config: Config = {
           500: "#4669fa",
           600: "#3F5EDF",
           700: "#D2C7C8",
-          800: "#004A8C",
+          800: "#FABC3F",
           900: "#9B0554",
         },
         secondary: {

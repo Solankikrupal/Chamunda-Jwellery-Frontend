@@ -19,7 +19,7 @@ export default function RootLayout({
     <>
       <Header />
       <main className="flex min-h-screen bg-bgColor-100 ">
-        <div className="container mx-auto px-5 lg:px-32">{children}</div>
+        <div className="container mx-auto px-5- lg:px-32-">{children}</div>
       </main>
       <Footer />
     </>
